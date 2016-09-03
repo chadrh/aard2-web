@@ -101,6 +101,8 @@ $(
           $lookupResult.append($div);
           return;
         }
+        // automatically navigate to the first result
+        $content.attr('src', data[0].url);
         var $ul = $('<ul>');
         data.every(function(item) {
           var $li = $('<li>');
